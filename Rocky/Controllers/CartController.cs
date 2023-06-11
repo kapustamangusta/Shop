@@ -60,7 +60,8 @@ namespace Rocky.Controllers
 
             ProductUserVM = new ProductUserVM()
             {
-                ApplicationUser = _db.ApplicationUsers.FirstOrDefault(u => u.Id == claim.Value)
+                ApplicationUser = _db.ApplicationUsers.FirstOrDefault(u => u.Id == claim.Value),
+                ProductList = prodList
             };
 
 
