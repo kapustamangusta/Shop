@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "z72B/d4H1dz8MNE8iCm7zWtaP5Pw/I52g0c3ddwNtVpvOjj/fbQb6UqioercFtG64NzBL/urKUUTlWl+B304bQ==",
+  "dgSpecHash": "YYzxoXlJrVdxZ4WIkwa2a/73saeTpB4B071XZBvnYoomDp6tgE2UeAnQsjDOo7Ekzs8yWCC684ciko+a5MgUGQ==",
   "success": true,
-  "projectFilePath": "E:\\Курсы\\ASP.NET Core\\ASP NET Core MVC для .NET 5\\Rocky\\Rocky\\Rocky.csproj",
+  "projectFilePath": "E:\\Курсы\\ASP.NET Core\\ASP NET Core MVC для .NET 5\\Rocky\\Shop\\Rocky\\Rocky.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\atomi\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\atomi\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
