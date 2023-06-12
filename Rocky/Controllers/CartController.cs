@@ -39,7 +39,7 @@ namespace Rocky.Controllers
         [ActionName("Index")]
         public IActionResult IndexPost()
         {
-            
+
             return RedirectToAction(nameof(Summary));
         }
 
@@ -61,11 +61,26 @@ namespace Rocky.Controllers
             ProductUserVM = new ProductUserVM()
             {
                 ApplicationUser = _db.ApplicationUsers.FirstOrDefault(u => u.Id == claim.Value),
-                ProductList = prodList
+                ProductList = prodList.ToList()
             };
 
 
             return View(ProductUserVM);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [ActionName("Summary")]
+        public IActionResult SummaryPost(ProductUserVM productUserVM)
+        {
+            
+            return RedirectToAction(nameof(InquiryConfirmation));
+        }
+
+        public IActionResult InquiryConfirmation()
+        {
+            HttpContext.Session.Clear();
+            return View();
         }
 
         public IActionResult Remove(int id)
